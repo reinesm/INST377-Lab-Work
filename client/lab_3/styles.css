@@ -4,12 +4,35 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    padding: 2px;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI';
+}
+
+.title {
+    display: inline-block;
+    background-color: rgba(0,139, 139,0.8);
+    padding: 10px 15px;
+    margin: 0;
+}
+
 .menu-container {
     color: #fff;
     background-color: #5995DA; /* Blue */
     padding: 20px 0;
     display: flex;
     justify-content: center; 
+    font-family: 'Segoe UI';
 }
 
 .menu {
@@ -23,6 +46,7 @@
 .project {
     align-self: flex-end;
     margin-bottom: 20px;
+    font-family: 'Segoe UI';
 }
 
 .links {
@@ -32,10 +56,12 @@
 
 .login {
     margin-left: 20px;
+    color:#fff;
 }
 
 .signup {
     margin-left: auto;
+    color:#fff;
 }
 
 .header-container {
