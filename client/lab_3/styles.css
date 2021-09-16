@@ -9,9 +9,14 @@ a {
     padding: 2px;
 }
 
-a:visited {
+a.white:visited {
     text-decoration: none;
-    color: white;
+    color: #fff;
+}
+
+a.blue:visited {
+    text-decoration: none;
+    color: #5995DA;
 }
 
 .wrapper {
@@ -34,6 +39,7 @@ a:visited {
     display: flex;
     justify-content: center; 
     font-family: 'Segoe UI';
+    font-weight: 1em;
 }
 
 .menu {
