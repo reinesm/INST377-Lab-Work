@@ -124,6 +124,7 @@ a.blue:visited {
     background-color: #d6e9fe;
     height: 200px;
     flex: 1;
+    font-family: 'Segoe UI';
 }
 
 .footer-one,
@@ -131,4 +132,6 @@ a.blue:visited {
     background-color: #5995DA;
     flex: initial;
     width: 300px;
+    font-family: 'Segoe UI';
+    color: black;
 }
