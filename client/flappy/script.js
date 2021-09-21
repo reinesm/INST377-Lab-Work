@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded' , () => {
             bird.style.left = birdLeft + 'px'
 
         }
-        let gametimerId = setInterval(startGame,20)
+        let gametimerId = setInterval(startGame, 20)
 
         function control(e) {
             if (e.keyCode === 32) {
