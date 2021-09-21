@@ -1,3 +1,4 @@
+
 .game-container {
     width: 500px;
     height: 730px;
@@ -5,7 +6,7 @@
 }
 
 .sky {
-    background-color: light-blue;
+    background-color: blue;
     width: 500px;
     height: 580px;
     position: absolute;
@@ -15,5 +16,20 @@
     background-color: brown;
     width: 500px;
     height: 150px;
+    position: absolute;
+    top: 580px;
+}
+
+.bird {
+    background-color: yellow;
+    position: absolute;
+    width: 60px;
+    height: 45px;
+}
+
+.obstacle {
+    background-color: green;
+    width: 60px;
+    height: 300px;
     position: absolute;
 }
