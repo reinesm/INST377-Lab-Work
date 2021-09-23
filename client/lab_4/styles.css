@@ -97,10 +97,9 @@ a.blue:visited {
     position: relative;
 }
 
-.carousel .casrousel_item,
+.carousel .carousel_item,
 .carousel .carousel_item--hidden {
     display: none;
-
 }
 
 .carousel .carousel_item img {
@@ -148,15 +147,6 @@ a.blue:visited {
         opacity: 1;
         transform: opacity linear;
     }
-}
-
-.photo-grid {
-    width: 900px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    align-items: center;
 }
 
 .footer {
