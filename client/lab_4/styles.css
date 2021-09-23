@@ -122,20 +122,22 @@ a.blue:visited {
     transform: translateY(-50%);
 }
 
-.carousel .carousel_actions button {
-    border-radius: 50px;
+.carousel_actions button {
     border: 0;
+    border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 20px;
 }
 
-.carousel .carousel_actions button#carousel_button--prev {
+.carousel_actions button#carousel_button--prev {
+    margin-top: 145px;
     margin-left: 20px;
 }
 
-.carousel .carousel_actions button#carousel_button--next {
+.carousel_actions button#carousel_button--next {
+    margin-top: 145px;
     margin-right: 20px;
 } 
 
