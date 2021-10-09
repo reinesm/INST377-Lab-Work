@@ -46,21 +46,41 @@ searchInput.addEventListener('keyup', displayMatches);
 function runMeOnClickEvent(evt) {
 }
 
-async function fetchRequest(evt) {
-    const url = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
-    const request = await fetch(url);
-    const json = await request.json();
-    console.table(json.data);
-    console.log(json);
+async function fetchRequest(url) {
+    try {
+        const request = await fetch(url);
+        const json = await request.json();
+        console.table(json);
+        return json;
+    } catch(err){
+        console.error(err);
+        return err;
+    }
 }
 
 function mainThread() {
     console.log('loaded main script');
+    const url = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
 
     /*Actually linked script example*/
     const targetElement = document.querySelector('.click_demo');
     targetElement.addEventListener('click', (event) => runMeOnClickEvent(event));
 
     const fetchElement = document.querySelector('.fetch');
-    fetchElement.addEventListener('click', async (event) => {await fetchRequest(event);})
+    fetchElement.addEventListener('click', async (event) => {
+        const data = await fetchRequest(url);
+        console.log('dataset size from county', data.length);
+        const displaySet = data.filter((item, index) => {
+            const zipcode = '20742';
+            return item.zip === zipcode;
+        });
+        console.long('displaySet contents', displaySet.length);
+    });
+
+    const inputBox = document.querySelector('#zipcode');
+    inputBox.addEventListener('input', (event) => {
+        console.log(event.target.value);
+    })
 }
+
+window.onload = mainThread;
