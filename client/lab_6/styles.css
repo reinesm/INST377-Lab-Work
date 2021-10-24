@@ -1,3 +1,7 @@
 .resto-name {
     font-weight: bold;
+    display: block;
+    width: fit-fontent;
+    padding: 10px;
+    border-radius: 4px;
 }
